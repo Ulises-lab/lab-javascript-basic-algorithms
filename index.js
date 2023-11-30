@@ -13,5 +13,33 @@ console.log(`It seems that the navigator has the longest name, it has ${navigato
 else{
 console.log(`Wow, you both have equally long names, ${driver.length} characters!`)
 }
-
 // Iteration 3: Loops
+driver = driver.toUpperCase()
+console.log(driver.split('').join(' '))
+
+let newNavigator = []
+for(i = navigator.length;i>-1;i--){
+	if(i>-1){
+	newNavigator.push(navigator[i])
+	}
+}
+console.log(newNavigator.join(''))
+
+// Another way
+/* navigator.split('').reverse().join('')
+  */
+navigator = navigator.toUpperCase()
+if(driver>navigator){
+	console.log("The driver's name goes first.")
+}
+else if(driver<navigator){
+	console.log('Yo, the navigator goes first, definitely.')
+}
+else{
+	console.log('What?! You both have the same name?')
+}
+
+
+// Bonus 1
+
+// Bonus 2
